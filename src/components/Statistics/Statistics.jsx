@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { CardPage, Title, StatList, StatItem, Label, Percentage } from './Statistics.styled';
-import { rendomColor } from 'components/utils/randomColor';
+import { rendomColor } from 'utils/randomColor';
 
 export const Statistics = ({ stats, title }) => {
   return ( <CardPage>
