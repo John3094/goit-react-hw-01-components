@@ -23,7 +23,6 @@ export const Description = styled.div`
   border-bottom: transparent;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-    
 `;
 
 export const Avatar = styled.img`
@@ -64,7 +63,6 @@ export const Stats = styled.ul`
   padding: 0;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-    
 `;
 
 export const Item = styled.li`

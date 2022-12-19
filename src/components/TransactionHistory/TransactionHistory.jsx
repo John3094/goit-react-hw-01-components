@@ -3,28 +3,27 @@ import { Table, Thead, ListItems } from './TransactionHistory.styled';
 
 export const TransactionHistory = ({ items }) => {
   return (
-  <Table>
-    <Thead>
-      <tr>
-        <th>Type</th>
-        <th>Amount</th>
-        <th>Currency</th>
-      </tr>
-    </Thead>
+    <Table>
+      <Thead>
+        <tr>
+          <th>Type</th>
+          <th>Amount</th>
+          <th>Currency</th>
+        </tr>
+      </Thead>
 
-  
-    <tbody>
-    {items.map(({ id, type, amount, currency}) => (
-      <ListItems  key={id}>
-          <td>{type}</td>
-          <td>{amount}</td>
-          <td>{currency}</td>
-      </ListItems>
-      ))}
-    </tbody>
-  </Table>
-);
-}
+      <tbody>
+        {items.map(({ id, type, amount, currency }) => (
+          <ListItems key={id}>
+            <td>{type}</td>
+            <td>{amount}</td>
+            <td>{currency}</td>
+          </ListItems>
+        ))}
+      </tbody>
+    </Table>
+  );
+};
 
 TransactionHistory.propTypes = {
   items: PropTypes.arrayOf(
@@ -33,8 +32,6 @@ TransactionHistory.propTypes = {
       type: PropTypes.string.isRequired,
       amount: PropTypes.string.isRequired,
       currency: PropTypes.string.isRequired,
-    }).isRequired,
+    }).isRequired
   ).isRequired,
 };
-
-

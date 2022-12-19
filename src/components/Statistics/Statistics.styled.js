@@ -31,14 +31,12 @@ export const StatItem = styled.li`
   height: 65px;
   padding: 10px;
   color: white;
-  background-color: ${props => props.color};;
-  `;
-
+  background-color: ${props => props.color};
+`;
 
 export const Label = styled.span`
   display: block;
 `;
-
 
 export const Percentage = styled.span`
   display: block;

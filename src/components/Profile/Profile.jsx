@@ -1,16 +1,28 @@
 import PropTypes from 'prop-types';
-import { ProfilePage, Avatar, Description, Name, Tag, Location, Stats, Item, Label, Quantity } from './Profile.styled';
+import {
+  ProfilePage,
+  Avatar,
+  Description,
+  Name,
+  Tag,
+  Location,
+  Stats,
+  Item,
+  Label,
+  Quantity,
+} from './Profile.styled';
 
-
-export const Profile = ({ userName, tag, location, avatar, stats: { followers, views, likes } }) => {
+export const Profile = ({
+  userName,
+  tag,
+  location,
+  avatar,
+  stats: { followers, views, likes },
+}) => {
   return (
     <ProfilePage>
       <Description>
-        <Avatar
-          src={avatar}
-          alt="User avatar"
-          className="avatar"
-        />  
+        <Avatar src={avatar} alt="User avatar" className="avatar" />
         <Name>{userName}</Name>
         <Tag>{tag}</Tag>
         <Location>{location}</Location>
@@ -31,7 +43,7 @@ export const Profile = ({ userName, tag, location, avatar, stats: { followers, v
         </Item>
       </Stats>
     </ProfilePage>
-  )
+  );
 };
 
 Profile.propTypes = {

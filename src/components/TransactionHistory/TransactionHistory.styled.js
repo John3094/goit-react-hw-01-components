@@ -1,16 +1,15 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Table = styled.table`
-
   margin: auto;
   text-align: center;
   width: 700px;
 
   tbody {
     :nth-child(odd) {
-    background-color: #ecf1f4;
+      background-color: #ecf1f4;
+    }
   }
-}
 `;
 
 export const Thead = styled.thead`
@@ -25,4 +24,3 @@ export const ListItems = styled.tr`
     border: 1px solid #f4f4f4;
   }
 `;
-
